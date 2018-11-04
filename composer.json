@@ -12,7 +12,10 @@
   "autoload": {
     "psr-4": {
       "Karamel\\Http\\": "src/"
-    }
+    },
+    "files": [
+      "src/Helpers/Helpers.php"
+    ]
   },
   "minimum-stability": "dev",
   "require": {}
