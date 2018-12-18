@@ -2,8 +2,10 @@
 
 namespace Karamel\Http\Models;
 
-class UplodedFile{
+class UplodedFile
+{
     private $meta;
+
     public function __construct($meta)
     {
         $this->meta = $meta;
@@ -36,6 +38,6 @@ class UplodedFile{
 
     public function getMimeType()
     {
-        
+
     }
 }

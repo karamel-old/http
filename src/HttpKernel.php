@@ -4,17 +4,23 @@ namespace Karamel\Http;
 class HttpKernel
 {
     protected static $instance;
-
-    public static function getInstance()
-    {
-        if (self::$instance == null)
-            self::$instance = new HttpKernel();
-        return self::$instance;
-    }
-
     protected $routeMiddlewares;
     protected $kernelClass;
 
+    public static function getInstance()
+    {
+        if (self::$instance == null) {
+            $class = get_called_class();
+            self::$instance = new $class();
+        } else {
+            $classType = (new \ReflectionClass(self::$instance))->getName();
+            if ($classType != get_called_class()) {
+                $class = get_called_class();
+                self::$instance = new $class();
+            }
+        }
+        return self::$instance;
+    }
 
     public function checkRouteMiddlewareExists($name)
     {
@@ -26,13 +32,13 @@ class HttpKernel
         return isset($this->routeMiddlewares[$name]) ? $this->routeMiddlewares[$name] : $default;
     }
 
-    public function setKernelClass($class)
-    {
-        $this->kernelClass = $class;
-    }
-
     public function getKernelClass()
     {
         return $this->kernelClass;
+    }
+
+    public function setKernelClass($class)
+    {
+        $this->kernelClass = $class;
     }
 }
