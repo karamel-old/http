@@ -9,3 +9,8 @@ function redirect($path)
     header('Location: ' . $path);
     exit;
 }
+
+function response()
+{
+    return new \Karamel\Http\Response();
+}

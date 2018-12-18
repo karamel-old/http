@@ -15,6 +15,7 @@ class Response
     public function setStatusCode($statusCode = 200)
     {
         header('status : 200');
+        return $this;
     }
 
     public function setContent($content)
