@@ -1,0 +1,51 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "95f5550aa8649d4dc575d37812343fb3",
+    "packages": [
+        {
+            "name": "karamel/validation",
+            "version": "v0.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/karamel-pack/validation.git",
+                "reference": "11e2184815a0697e8c0ec1cdd45b3c3836d61c39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/karamel-pack/validation/zipball/11e2184815a0697e8c0ec1cdd45b3c3836d61c39",
+                "reference": "11e2184815a0697e8c0ec1cdd45b3c3836d61c39",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Karamel\\Validation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Amir Kalantar",
+                    "email": "amir.kalantar@gmail.com"
+                }
+            ],
+            "description": "karamel\\",
+            "time": "2018-11-14T14:53:17+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
