@@ -19,6 +19,6 @@
   },
   "minimum-stability": "dev",
   "require": {
-    "karamel/validation": "v0.1.5"
+    "karamel/validation": "v1.0.6"
   }
 }
